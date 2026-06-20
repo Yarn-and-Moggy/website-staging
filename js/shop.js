@@ -229,7 +229,6 @@ async function fetchProducts(grid, cursor = "") {
     return data.next_cursor;
   } catch (err) {
     console.error("Failed to load products", err);
-    alert(`error: ${err}`);
     return null;
   }
 }
